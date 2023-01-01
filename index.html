@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <div class="navBar">
+      <div class="logo">Landing Page</div>
+      <div class="navBarDetails" id="nav">
+        <ul class="navUl">
+          <li class="navItem">
+            <a href="#home">Home</a>
+          </li>
+          <li class="navItem">
+            <a href="#contactUs">Contact Us</a>
+          </li>
+          <li class="navItem">
+            <a href="#aboutUs">About Us</a>
+          </li>
+          <li class="navItem">
+            <a href="#ourServices">Our Services</a>
+          </li>
+        </ul>
+      </div>
+      <div class="toggle-btn" onclick="toggleBtn()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div class="homePage" id="home">
+      <div class="txt">
+        <div class="homeTxt">
+          <h1>Business Landing Page</h1>
+        </div>
+        <div class="homeImg">
+          <img src="laptop.png" alt="Laptop Photo" />
+        </div>
+      </div>
+      <div class="arrowBtn">
+        <a href="#ourServices"><img src="okay.png" alt="Down Arrow" /></a>
+      </div>
+    </div>
+
+    <div class="aboutPage" id="aboutUs">
+      <div class="aboutImg"><img src="stairs.jpg" alt="" /></div>
+      <div class="aboutTxt">
+        <h1>ABOUT US</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quis
+          dolorum saepe nam iure quos voluptate necessitatibus porro unde culpa
+          veniam facilis natus, omnis vero eos fugit reprehenderit amet illum.
+          Minus eum unde quia, pariatur voluptates a optio adipisci laborum!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+          consectetur blanditiis exercitationem, distinctio fuga vel numquam
+          perspiciatis obcaecati voluptas ullam dolorem sunt cumque iure itaque
+          commodi sint est ea nisi error ducimus. Est suscipit blanditiis
+          facere, quo odio enim illo neque aliquid a maiores corrupti
+          praesentium doloremque sit, quaerat reiciendis.
+        </p>
+      </div>
+    </div>
+
+    <div class="ourServices" id="ourServices">
+      <h1>OUR SERVICES</h1>
+      <div class="servicesBox">
+        <div class="services1 serv">
+          <h3>Service 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
+            esse architecto quibusdam porro error nam accusantium animi
+            similique earum dolorum. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Perspiciatis, beatae. Sed, reprehenderit
+            consequuntur? Suscipit illo ad nulla optio ullam totam.
+          </p>
+        </div>
+        <div class="services2 serv">
+          <h3>Service 2</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
+            esse architecto quibusdam porro error nam accusantium animi
+            similique earum dolorum.lorem20 Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Ex temporibus atque repudiandae quis
+            necessitatibus quasi numquam autem laudantium sint fuga.
+          </p>
+        </div>
+        <div class="services3 serv">
+          <h3>Service 3</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
+            esse architecto quibusdam porro error nam accusantium animi
+            similique earum dolorum.lorem20 Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Ex temporibus atque repudiandae quis
+            necessitatibus quasi numquam autem laudantium sint fuga.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="contactSection" id="contactUs">
+      <div class="contactForm contact">
+        <h1>CONTACT US</h1>
+        <input type="text" placeholder="First Name" />
+        <input type="text" placeholder="Last Name" />
+        <input type="text" placeholder="Email Address" />
+        <input type="text" placeholder="Reason for contacting" />
+        <button type="submit" class="bbtn">Submit</button>
+      </div>
+    </div>
+  </body>
+  <script>
+    function toggleBtn() {
+      var navbar = document.getElementById("nav");
+      navbar.classList.toggle("show");
+    }
+  </script>
+</html>
